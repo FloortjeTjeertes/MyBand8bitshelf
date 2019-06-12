@@ -11,12 +11,12 @@
 class GameplayerController {
 
 	function Gameplayer(){
-
+		$number = 1;
 		include __DIR__ . '/../views/header.php';
 
 
 
-	
+
 		include __DIR__ . '/../views/nesEmu.php';
 
 

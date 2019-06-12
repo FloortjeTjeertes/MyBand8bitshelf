@@ -1,5 +1,4 @@
 
-
 var dropOn = 0;
 dropdown.style.visibility = "hidden";
 hamburger.addEventListener("click", test);
@@ -22,8 +21,11 @@ console.log(dropOn);
 };
 
 
-function gameredirect(test2){
-var test2 =document.coockie;
+function gameredirect(number2){
+let number = document.getElementById(number2);
+console.log(number.id);
+document.cookie = "id="+number.id;
+console.log(document.cookie);
 
-console.log(String(info));
+window.location.href="/MyBand8bitshelf/public/GamePlayer";
 };

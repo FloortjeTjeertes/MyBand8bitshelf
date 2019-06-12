@@ -1,3 +1,25 @@
+<?php
+
+
+  $servername ="localhost";
+  $uid="root";
+  $pwd="";
+  $database="gamedata";
+  $con = mysqli_connect($servername,$uid,$pwd,$database);
+  // $q = $_GET['q'];
+
+  if(!$con){
+    die('kan niet verbinden: '.mysqli_error($con));
+  }
+  $sql="SELECT * FROM GameInfo WHERE id='$number'";
+  $result = mysqli_query($con,$sql);
+
+  $rom = "";
+  while($row = mysqli_fetch_array($result)){
+    $rom = $row['file'];
+  }
+?>
+
 <link rel="stylesheet" type="text/css" href="../public/css/baseStyle.css">
 
 
@@ -15,7 +37,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
 
 <script type="text/javascript">
-
+console.log(document.cookie);
 var resizeOwnEmulator = function(width, height)
 {
   var emulator = $('#emulator');
@@ -33,7 +55,7 @@ $(function()
       var flashvars =
       {
         system : 'nes',
-        url : 'roms/Metroid (U).nes'
+        url : 'roms/<?php echo$rom;?>'
       };
       var params = {};
       var attributes = {};

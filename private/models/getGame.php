@@ -16,7 +16,7 @@ $sql="SELECT * FROM GameInfo";
 $result = mysqli_query($con,$sql);
 
 
-
+$number = 0;
 while($row = mysqli_fetch_array($result)){
 
 
@@ -30,7 +30,7 @@ while($row = mysqli_fetch_array($result)){
 	$GameInfo = $row['GameInfo'];
 	$file = $row['file'];
 
-$infolist = array($file,);
+
 
 
 
@@ -42,8 +42,10 @@ echo "<br><br>";
 echo '<div id="Info">' .'<p div="Itext">'. $GameInfo.'</p>'. '</div>';
 echo "<br><br>";
 echo '<div id="boxart"><img id=boxartPlaatje src="./images/nes_covers/'  . $BoxArt . '"></div>';
-echo '<div id="GameButton"><a id="gameButton" onclick="gameredirect()"><img class="GameButton" src="./images/nes.png"></a></div>';
+echo '<div id="GameButton"><a id="gameButton" onclick="gameredirect('.$number.')"><img class="GameButton" src="./images/nes.png"></a></div>';
+echo '<input type=hidden id='.$number.' value='.$file.'>';
 echo '</div>';
+$number = $number+1;
 }
 
 mysqli_close($con);
