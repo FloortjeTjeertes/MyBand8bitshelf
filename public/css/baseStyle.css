@@ -11,7 +11,7 @@ body {
   grid-template-columns: 250px 702px 250px;
 }
 #grido{
-  margin-top: 460px;
+  margin-top: 160px;
   grid-column-start: 2;
   grid-column-end: 3;
 }
@@ -136,7 +136,7 @@ background-color:transparent;
   border-top: 59px solid #D7D7D7;
   border-left: 40px solid transparent;
   border-right: 50px solid transparent;
-
+height: 2em;
 }
 
 #hamburger {

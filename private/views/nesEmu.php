@@ -11,7 +11,7 @@
   if(!$con){
     die('kan niet verbinden: '.mysqli_error($con));
   }
-  $sql="SELECT * FROM GameInfo WHERE id='$number'";
+  $sql="SELECT * FROM GameInfo WHERE id='$_COOKIE[id]'+1";
   $result = mysqli_query($con,$sql);
 
   $rom = "";
@@ -37,7 +37,10 @@
 <script src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
 
 <script type="text/javascript">
-console.log(document.cookie);
+// console.log(document.cookie);
+var bestand= document.cookie;
+console.log(bestand);
+
 var resizeOwnEmulator = function(width, height)
 {
   var emulator = $('#emulator');
@@ -72,3 +75,6 @@ $(function()
 });
 
 </script>
+<?php
+$rom = " ";
+?>

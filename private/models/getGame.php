@@ -23,7 +23,7 @@ while($row = mysqli_fetch_array($result)){
 
 
 
-
+ $Id= $row['id'];
 	$BoxArt = $row['Img'];
 
   $Title = $row['Title'];

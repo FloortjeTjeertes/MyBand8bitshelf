@@ -11,7 +11,7 @@
 class GameplayerController {
 
 	function Gameplayer(){
-		$number = 1;
+		$number = '1';
 		include __DIR__ . '/../views/header.php';
 
 
