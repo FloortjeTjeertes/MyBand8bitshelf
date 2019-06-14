@@ -60,7 +60,7 @@ $router->map( 'GET', '/agenda', 'agendaController#agenda', 'agenda-overzicht' );
 
 $router->map( 'GET', '/GamePlayer', 'GamePlayerController#Gameplayer', 'Gameplayer' );
 
-$router->map( 'GET', '/over-ons', 'PageController#aboutUs', 'over-ons' );
+$router->map( 'GET', '/Registreer', 'RegistreerController#Registreer', 'Registreer' );
 
 // $router->map( 'GET', '/voorbeeld', function () {
 // 	echo 'Zo kun je ook een route afhandelen door een inline functie te gebruiken, maar dat wordt al snel rommelig (deze mag je dus weer weghalen of laten staan als voorbeeld';

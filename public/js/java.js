@@ -30,3 +30,10 @@ console.log(document.cookie);
 window.location.href="/MyBand8bitshelf/public/GamePlayer";
 
 };
+let RegistreerKnop = document.getElementById('registreren');
+
+RegistreerKnop.addEventListener("click", registreerKlik);
+function registreerKlik(){
+  window.location.href="/MyBand8bitshelf/public/Registreer";
+
+};
