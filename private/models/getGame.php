@@ -23,7 +23,7 @@ while($row = mysqli_fetch_array($result)){
 
 
 
- $Id= $row['id'];
+  $Id= $row['id'];
 	$BoxArt = $row['Img'];
 
   $Title = $row['Title'];
@@ -44,6 +44,8 @@ echo "<br><br>";
 echo '<div id="boxart"><img id=boxartPlaatje src="./images/nes_covers/'  . $BoxArt . '"></div>';
 echo '<div id="GameButton"><a id="gameButton" onclick="gameredirect('.$number.')"><img class="GameButton" src="./images/nes.png"></a></div>';
 echo '<input type=hidden id='.$number.' value='.$file.'>';
+echo '<input type=hidden id="ID" value='.$Id.'>';
+
 echo '</div>';
 $number = $number+1;
 }

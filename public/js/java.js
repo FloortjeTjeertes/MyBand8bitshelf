@@ -28,4 +28,5 @@ document.cookie = "id="+number.id;
 console.log(document.cookie);
 
 window.location.href="/MyBand8bitshelf/public/GamePlayer";
+
 };

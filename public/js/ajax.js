@@ -8,11 +8,11 @@ function ajax(info) {
     if (this.readyState == 4 && this.status == 200) {
 
 
-
+      //
       // let httpString = "getGame.php?BoxArt="+BoxArt+"&age=" + age.value+"&lastName="+lastName.value+"&email="+email.value;
-      //debuggen laat http string zien
+      // debuggen laat http string zien
       // console.log(httpString);
-      //bereid de ajax actie voor
+      // bereid de ajax actie voor
 
       var response = xmlhttp.responseText;
 
@@ -22,7 +22,7 @@ function ajax(info) {
 
     }
   };
-
-    xmlhttp.open("GET", "../private/models/getGame.php", true);
+let httpString = "getGame.php";
+    xmlhttp.open("GET", "../private/models/"+httpString, true);
   xmlhttp.send(); //doehet
 }
