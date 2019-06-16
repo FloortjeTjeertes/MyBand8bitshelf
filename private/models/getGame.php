@@ -12,9 +12,11 @@ $con = mysqli_connect($servername,$uid,$pwd,$database);
 if(!$con){
   die('kan niet verbinden: '.mysqli_error($con));
 }
-$sql="SELECT * FROM GameInfo";
+$Title = "'%".$_GET['zoek']."%'";
+$GameInfo ="'%Mario%'";
+$sql="SELECT * FROM GameInfo WHERE Title LIKE $Title";
 $result = mysqli_query($con,$sql);
-
+echo $sql;
 
 $number = 0;
 while($row = mysqli_fetch_array($result)){

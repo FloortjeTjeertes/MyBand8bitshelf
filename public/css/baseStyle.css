@@ -9,9 +9,10 @@ body {
 }
 
 /* de grid */
+
 #grid {
   display: grid;
-  grid-template-columns: 250px 702px 250px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 #grido{
   margin-top: 160px;
@@ -81,9 +82,16 @@ background-color:transparent;
 }
 
 /* einde emulator */
+#headergrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100px;
+  width:100px;
+}
 #header {
+
   margin-top: -8px;
-  margin-left: 250px;
+  margin-left: 25.6%;
   margin-right: 250px;
   height: 200px;
   z-index: 3000;
@@ -157,12 +165,16 @@ height: 2em;
 }
 
 #dropdown {
-  margin-top: 15px;
-  background-color: #F2F2F2;
   width: 102px;
   height: 254px;
+  margin-left: -65%;
+  margin-top:-140px;
 }
-
+input#searchbar{
+  /* display: none; */
+  visibility:hidden;
+  margin-left: 10em;
+}
 #zoekPaginaKnop {
   text-align: right;
   color: white;
@@ -172,6 +184,7 @@ height: 2em;
   background-repeat: no-repeat;
   background-size: contain;
   margin-left: 4px;
+  margin-top: -15px;
 }
 
 #zoekPaginaKnop h {

@@ -9,7 +9,7 @@
   </head>
 <body>
   <!-- begin header -->
-<div id="header" >
+<div id="grid"><div id="header" >
 <div id="bovenkant">
 </div>
 <div id="klepje">
@@ -30,6 +30,7 @@
   registreren
 </div>
 <div id="dropdown" class="active">
+  <input id="searchbar" type="text" placeholder="press enter to search" value="" onkeyup="search(event)">
 <div id="zoekPaginaKnop">
     <b>zoeken</b>
 </div>
@@ -42,5 +43,6 @@
     </div>
 
   </div>
+<!-- </div> -->
   <!-- einde van de header -->
-<div id="grid">
+<!-- <div id="grid"> -->
