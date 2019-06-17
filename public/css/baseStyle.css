@@ -10,6 +10,9 @@ body {
 }
 
 /* de grid */
+#discord{
+  position:absolute;
+}
 
 #grid {
   display: grid;
