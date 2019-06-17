@@ -189,7 +189,7 @@ input#searchbar{
 border-bottom-width: thin;
 }
 #zoekPaginaKnop {
-  text-align: right;
+  text-align: center;
   color: white;
   height: 20px;
   width: 20px;
@@ -205,8 +205,7 @@ border-bottom-width: thin;
 }
 
 #zoekPaginaKnop:hover {
-  -webkit-animation: vibrate-1 0.3s linear infinite both;
-  animation: vibrate-1 0.3s linear infinite both;
+
   cursor: pointer;
 }
 
@@ -226,8 +225,7 @@ border-bottom-width: thin;
 }
 
 #agendaKnop:hover {
-  -webkit-animation: vibrate-1 0.3s linear infinite both;
-  animation: vibrate-1 0.3s linear infinite both;
+
   cursor: pointer;
 }
 
