@@ -11,14 +11,17 @@ function test() {
 
     hamburger.style.color = "#D80000 ";
     dropdown.style.visibility = "visible";
-
+    grido.style.margin = "314px";
     dropOn = +1;
     console.log(dropOn);
+ window.scrollBy(0, -10000);
   } else {
     console.log("anders");
     hamburger.style.color = "red";
     dropdown.style.visibility = "hidden";
     searchbar.style.visibility = "hidden";
+    grido.style.margin = "160px";
+
     dropOn = 0;
     console.log(dropOn);
   }
@@ -54,8 +57,8 @@ function search(event) {
     console.log(searchbar.value);
 
 
- }
- ajax(searchVallue);
+  }
+  ajax(searchVallue);
 
 
 };
@@ -80,8 +83,8 @@ function registreerKlik() {
 
 };
 var zoekAlles = 0;
-if (zoekAlles ==0){
+if (zoekAlles == 0) {
   ajax("");
-zoekAlles = 1;
-console.log("zoekalles="+zoekAlles);
+  zoekAlles = 1;
+  console.log("zoekalles=" + zoekAlles);
 }
