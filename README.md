@@ -2,6 +2,11 @@
 8bitshelf.com is een website van florian tjeertes waar gebruikers kunnen zoeken naar oldschool games informatie er over lezen en de games kunnen spelen bedoeld voor retrogamers
 De website is enigszins te vergelijken met http://emulator.online/nes/ of https://www.playretrogames.com/ maar toch anders omdat ik er informatie bij zet over de game
 
+
+
+
+mijn site http://27237.hosts2.ma-cloud.nl/bewijzenmap/periode1.1/pro1/MyBand8bitshelf/public/
+
 ### Uniek aan dit concept is: 
  * eerste u.s.p. (vul hier in, waarin jouw site anders is dan alle anderen)
  * tweede u.s.p. (vul hier in, waar jouw site door gaat opvallen, wat zal iedereen onthouden van jouw site?)
